@@ -301,7 +301,7 @@ function htmlBuild() {
 let fontsBuild = gulp.series(fonts_otf, fonts, fontstyle);
 let buildDev = gulp.series(clean, gulp.parallel(fontsBuild, copyFolders, json, html, css, js, favicon, images));
 let watch = gulp.series(buildDev, gulp.parallel(watchFiles, browserSync));
-let build = gulp.parallel(htmlBuild, cssBuild, jsBuild, imagesBuild);
+let build = gulp.parallel(htmlBuild, cssBuild, jsBuild, imagesBuild, json, fontsBuild, favicon);
 
 exports.copy = copyFolders;
 exports.fonts = fontsBuild;
