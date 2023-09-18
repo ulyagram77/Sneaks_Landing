@@ -6,7 +6,7 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "predeploy": "",
-        "deploy": "gh-pages -d dist"
+        "deploy": "gh-pages -d SNEAKS"
     },
 	"author": "FLS",
 	"private": true,
